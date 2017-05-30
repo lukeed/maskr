@@ -1,11 +1,13 @@
 const Table = require('cli-table2');
 const { Suite } = require('benchmark');
+const fn = require('../dist/maskr');
 
 const bench = new Suite();
+const MASK = '(___) ___-____';
+const VALUE = '1234567890';
 
 bench
-	.add('foo', () => 'foo')
-	.add('bar', () => 'bar')
+	.add('maskr', () => fn(MASK, VALUE))
 	.on('cycle', e => console.log(String(e.target)))
 	.on('complete', function() {
 		console.log('Fastest is ' + this.filter('fastest').map('name'));
