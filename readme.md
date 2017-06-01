@@ -99,7 +99,7 @@ The value string to match against the `mask`.
 
 ```
 maskr
-  --> 6,078,612 ops/sec ±0.40% (94 runs sampled)
+  --> 6,415,566 ops/sec ±0.31% (94 runs sampled)
 ```
 
 ## License

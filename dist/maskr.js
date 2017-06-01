@@ -1,6 +1,6 @@
 module.exports = function (mask, input) {
-	var val='', idx=0, pos=0, i=0;
-	for (; i < mask.length; i++) {
+	var val='', len=mask.length, idx=0, pos=0, i=0;
+	for (; i < len; i++) {
 		if (mask[i] === '_') {
 			if (input[idx] !== void 0) {
 				val += input[idx];
@@ -13,5 +13,5 @@ module.exports = function (mask, input) {
 			val += mask[i];
 		}
 	}
-	return { value:val, cursor:pos };
+	return { value:val, cursor:(pos || len) };
 }
