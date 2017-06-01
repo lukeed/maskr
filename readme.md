@@ -1,6 +1,6 @@
 # maskr [![Build Status](https://travis-ci.org/lukeed/maskr.svg?branch=master)](https://travis-ci.org/lukeed/maskr)
 
-> A tiny (151B) utility to compare a string against a template mask.
+> A tiny (156B) utility to compare a string against a template mask.
 
 [Demo][demo]
 
@@ -24,7 +24,7 @@ const maskr = require('maskr');
 const demo = '(___) ___-____';
 
 maskr(demo, '');
-//=> { value:'(___) ___-____', cursor:0 }
+//=> { value:'(___) ___-____', cursor:1 }
 
 maskr(demo, '12345678');
 //=> { value:'(123) 456-78__', cursor:12 }

@@ -1,7 +1,7 @@
 {
   "name": "maskr",
   "version": "0.1.0",
-  "description": "A tiny (151B) utility to compare a string against a template mask.",
+  "description": "A tiny (156B) utility to compare a string against a template mask.",
   "repository": "lukeed/maskr",
   "module": "dist/maskr.es.js",
   "main": "dist/maskr.js",
